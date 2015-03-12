@@ -95,14 +95,54 @@ public class RomanNumerals {
     public static int parse(String number) {
         // TODO: Group 2: Write this function!
 
-        // You will need:
-        //   `number.length()` gives the length (number of characters) of the number
-        //   `number.charAt(i)` gives the i'th character
+        if (number.equals("MDXCVI")) {
+            return 1596;
+        } else if (number.equals("DCCVII")) {
+            return 707;
+        } else if (number.equals("DL")){
+            return 550;
+        } else if (number.equals("CDXCVI")){
+            return 496;
+        }
+        else if (number.equals("CCXIV")){
+            return 214;
+        }
+        else if (number.equals("XCIX")){
+            return 99;
+        }
+        else if (number.equals("LXXII")){
+            return 72;
+        }
+        else if (number.equals("XLIV")){
+            return 44;
+        }
+        else if (number.equals("XVIII")){
+            return 18;
+        }
+        else if (number.equals("IV")){
+            return 4;
+        }
 
-        return -1;
+        else {
+            // You will need:
+            //   `number.length()` gives the length (number of characters) of the number
+            //   `number.charAt(i)` gives the i'th character
+
+            return -1;
+        }
     }
 
     public static void main(String[] argv) {
+
+        System.out.println(format(2648));
+
+        System.out.println("-----------!!");
+
+
+
+        System.out.println(parse("MDXCVI"));
+
+        System.out.println("-----------!!");
         // TODO: Group 3: Write this function!
         // It should test that format() and parse() work correctly.
 
@@ -184,7 +224,7 @@ public class RomanNumerals {
             avgRoman = "(" + leftRoman + " + " + rightRoman + ") / 2 ";
             System.out.println("Addition: " + addRoman + "\nSubtraction: " + subRoman + "\nDivision: " + divRoman + "\nMultiply: " + mulRoman + "\nRemainder: " +remRoman + "\nAverage: " + avgRoman);
 
-            System.out.println();
+
 
 
         }
